@@ -1,0 +1,110 @@
+/* 
+
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+*/
+/* HEADER */
+#mainMenu nav > ul > li > a{
+    color: var(--primary-color);
+}
+#mainMenu nav > ul > li.hover-active > a, #mainMenu nav > ul > li.hover-active > span, #mainMenu nav > ul > li.current > a, #mainMenu nav > ul > li.current > span, #mainMenu nav > ul > li:hover > a, #mainMenu nav > ul > li:hover > span, #mainMenu nav > ul > li:focus > a, #mainMenu nav > ul > li:focus > span{
+    color: var(--secondary-color);
+}
+/* MENU */
+#mainMenu.menu-overlay nav{
+    background: #ec331bf2
+}
+.dark #mainMenu nav > ul > li.hover-active > a, .dark #mainMenu nav > ul > li.hover-active > span, .dark #mainMenu nav > ul > li.current > a, .dark #mainMenu nav > ul > li.current > span, .dark #mainMenu nav > ul > li:hover > a, .dark #mainMenu nav > ul > li:hover > span, .dark #mainMenu nav > ul > li:focus > a, .dark #mainMenu nav > ul > li:focus > span, #mainMenu.dark nav > ul > li.hover-active > a, #mainMenu.dark nav > ul > li.hover-active > span, #mainMenu.dark nav > ul > li.current > a, #mainMenu.dark nav > ul > li.current > span, #mainMenu.dark nav > ul > li:hover > a, #mainMenu.dark nav > ul > li:hover > span, #mainMenu.dark nav > ul > li:focus > a, #mainMenu.dark nav > ul > li:focus > span{
+    color: #262525f2
+}
+/* TEXTOS */
+h2, h3, h4{
+    color: var(--primary-color);
+}
+.h5, h6{
+    color: var(--secondary-color);
+}
+p{
+    color: var(--primary-color);
+}
+.inspiro-slider .slide .slide-captions h1, .inspiro-slider .slide .slide-captions h2{
+    /* font-size: 25px; */
+}
+a:not(.btn):not(.badge):hover, a:not(.btn):not(.badge):focus, a:not(.btn):not(.badge):active{
+    color: var(--secondary-color);
+}
+.badge-pink {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.product a:not(.btn){
+    color: var(--primary-color);
+}
+.list-group input[type="radio"]:checked + .list-group-item {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.breadcrumb-item.active{
+    color: var(--secondary-color);
+}
+
+
+/* BUTTONS */
+button.btn, .btn:not(.close):not(.mfp-close), a.btn:not([href]):not([tabindex]){
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #ffffff;
+}
+button.btn:hover, button.btn:focus, button.btn:not(:disabled):not(.disabled):active, button.btn:not(:disabled):not(.disabled).active, .btn:not(.close):not(.mfp-close):hover, .btn:not(.close):not(.mfp-close):focus, .btn:not(.close):not(.mfp-close):not(:disabled):not(.disabled):active, .btn:not(.close):not(.mfp-close):not(:disabled):not(.disabled).active, a.btn:not([href]):not([tabindex]):hover, a.btn:not([href]):not([tabindex]):focus, a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled):active, a.btn:not([href]):not([tabindex]):not(:disabled):not(.disabled).active{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* #CARDS */
+.team-members .team-member {
+    background-color: #ffffff;
+    border-radius: 40px;
+}
+.portfolio-item-wrap{
+    border-radius: 10px!important;
+}
+
+/* Video */
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+
+.facebook-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+
+@media (max-width: 768px){
+    .text-lg, .text-lg span {
+        font-size: 20px !important;
+        line-height: 40px !important;
+    }
+    .product .product-title h3, .product .product-title h3 a {
+        font-size: 12px;
+        margin-bottom: 0;
+        line-height: 13px;
+    }
+}
+
+@media (max-width: 1024px){
+    #header #logo > a img {
+       width: 100px;
+    }
+}
